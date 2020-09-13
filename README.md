@@ -15,8 +15,7 @@ python train_teacher.py -cfg ./configs/train_vanilla/resnet32x4.yaml
 ```
 where you can configure the architecture via modifying the `model` property in yaml file.
 
-You can also download all the pre-trained teacher models on [baiduyun]()
-or [google cloud](). 
+You can also download all the pre-trained teacher models on [baiduyun](https://pan.baidu.com/s/1qnTorkoU6BWlf260NajcEw) (password:s63v). 
 
 ### Student Training
 An example of training `shufflev2` taught by `resnet32x4` with ASKD is:
