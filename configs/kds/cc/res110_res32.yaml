@@ -1,0 +1,33 @@
+# public specification
+print_freq: 100
+save_freq: 40
+batch_size: 64
+num_workers: 4
+
+# optimization and training
+epochs: 240
+init_epochs: 30
+learning_rate: 0.05
+lr_decay_epochs: '150,180,210'
+lr_decay_rate: 0.1
+weight_decay: 5e-4
+momentum: 0.9
+
+# data
+dataset: 'cifar100'
+data_dir: './data/cifar100'
+
+# model
+model_s: 'resnet32'
+model_t: 'resnet110'
+path_t: './save/teacher_model/cifar100/resnet110_vanilla.pth'
+save_folder: './save/student_model/cifar100/cc_1th/res110_res32'
+
+# kd
+distill: 'correlation'
+gamma: 1  # task
+alpha: 0  # hkd
+beta: 0.02   # kd
+kd_T: 4
+feat_dim: 128
+

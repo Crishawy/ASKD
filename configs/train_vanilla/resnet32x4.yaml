@@ -1,0 +1,21 @@
+# public specification
+print_freq: 100
+save_freq: 40
+batch_size: 64
+num_workers: 8
+epochs: 240
+
+# optimization
+learning_rate: 0.05
+lr_decay_epochs: '150,180,210'
+lr_decay_rate: 0.1
+weight_decay: 5e-4
+momentum: 0.9
+
+# data
+dataset: 'cifar100'   # ['cifar100', 'tiny_imagenet']
+data_dir: './data/cifar100'   # your dataset directory
+save_folder: './save/teacher_model/resnet32x4_cifar100'
+
+# model
+model: 'resnet32x4'   # the architecture chosen from ./models/__init__.py

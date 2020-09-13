@@ -1,0 +1,21 @@
+# public specification
+print_freq: 100
+save_freq: 40
+batch_size: 64
+num_workers: 8
+epochs: 240
+
+# optimization
+learning_rate: 0.05
+lr_decay_epochs: '150,180,210'
+lr_decay_rate: 0.1
+weight_decay: 5e-4
+momentum: 0.9
+
+# data
+dataset: 'cifar100'
+data_dir: './data/cifar100'
+save_folder: './save/teacher_model/ShuffleV2_cifar100'
+
+# model
+model: 'ShuffleV2'
